@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{selinput}
+\SelectInputMappings{%
+  adieresis={ä},
+  eacute={é},
+  Lcaron={Ľ},
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Brian} % Your first name
+\familyname{Romero} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{}
+\address{1001 Canadian Cir.}{Grand Prairie, TX 75050}
+\mobile{(972) 567 8640}
+
+\email{romer0\_brian3@yahoo.com}
+ % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{Dec 2023}{State Bar of Texas}{Licensed Attorney}{Dallas, Texas}{}{}
+\cventry{Dec 2022}{Juris Doctor, Dec 2022}{Texas A\&M University School of Law}{Fort Worth, Texas}{}{}
+\cventry{Fall 2017}{Bachelor of Arts \& Sciences, Government}{Texas Tech University, Magna Cum Laude}{Lubbock, Texas}{}{}
+\cventry{Fall 2017}{Bachelor of Arts \& Science, Philosophy}{Texas Tech University, Magna Cum Laude}{Lubbock, Texas}{}{}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+% usage: \cventry[spacing]{years}{degree/job title}{institution/employer}{localization}{optionnal: grade/...}{optional: comment/job description}
+
+\section{Legal Experience}
+
+
+\cventry[1 em]{Feb 2024 - Present}{Municipal Prosecutor}{City Assistant City Attorney – City of Arlington}{Arlington, Texas}{}{Represent the City of Arlington in complex legal matters, managing cases from pre-litigation through trial with experience in both jury and bench proceedings.} 
+
+\cventry[1 em]{July 2023 – Feb 2024}{Fair Housing and Equal Opportunity Specialist – Program \& Compliance}{U.S Department of Housing and Urban Development}{Fort Worth, Texas}{}{Oversaw multiple government and municipal agencies, ensuring program compliance and correcting violations while collaborating with senior staff to enforce the Fair Housing Act.} 
+
+\cventry[1 em]{July 2022 - Feb 2023}{Attorney}{SubroSmart, LLC}{Dallas, Texas}{}{Reviewed discovery documents and supported pre-litigation strategies in complex personal injury cases, successfully negotiating settlements with insurance companies.} 
+
+\cventry[1 em]{Jan 2022 – May 2022}{Clinic Student}{Tax Dispute Resolution Legal Clinic}{Fort Worth, Texas}{Texas A\&M University School of Law}{Collaborated with clients on IRS tax controversy matters, drafting Offer in Compromise (OIC), Innocent Spouse (IS), and refund claim documents under the guidance of a supervising attorney.} 
+
+\cventry[1 em]{May 2021 – Apr 2022}{Law Clerk}{Witherite Law Group, PLLC}{Dallas, Texas}{}{Assisted in discovery procedures and drafted pre-litigation documents, including Plaintiff’s Original Petitions, while observing and supporting attorneys through various stages of civil litigation.}
+
+\cventry[1 em]{Jan 2021 – Dec 2021}{Law Clerk Externship}{U.S Department of Housing and Urban Development}{Fort Worth, Texas}{}{Drafted litigation documents and prepared memoranda on complex FHA issues for the Office of General Counsel, supporting attorneys in the pre-litigation phase of ongoing cases.}
+
+\cventry[1 em]{Oct 2020 – Dec 2020}{Law Clerk}{Perry Cockerell, P.C.}{Fort Worth, Texas}{}{Prepared written memoranda and drafted Motions for Summary Judgment and related filings for complex commercial litigation matters.}
+
+\cventry[1 em]{Aug 2020 – Dec 2020}{Clinic Student}{Estate Planning and Probate Legal Clinic}{Fort Worth, Texas}{Texas A\&M University School of Law}{Led client interviews and managed probate and estate planning cases from start to finish, including drafting legal documents and composing memoranda on complex estate matters.}
+
+\cventry[1 em]{May 2020 - Sep 2020}{Law Clerk}{Law Offices of Tracy S. Bush, PLLC}{Mansfield, Texas}{}{Managed litigation cases from inception to trial by preparing case files, drafting legal documents, conducting legal research, coordinating court schedules, and engaging directly with clients and depositions.}
+
+
+\section{Professional Experience}
+
+\cventry[1 em]{June 2021 - Present}{Owner}{B\&G Estates, LLC}{}{}{Own and manage a real estate company specializing in acquiring, renovating, and operating short-term rental properties.}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Spanish}{Fluent}{}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+
+\makelettertitle % Print letter title
+
+%fjkdjhsfkjdsfkdjsfkdjfdfd
+
+\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
