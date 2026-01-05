@@ -2,7 +2,7 @@
 
 # Requirements
 
-- (TeX Live 2023/Debian)
+- (TeX Live 2023/Debian) `wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz`
 
 # Usage
 
